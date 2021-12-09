@@ -1,0 +1,56 @@
+.invitacion {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	margin-left: auto;
+	margin-right: auto;
+	width: 357px;
+	height: 700px;
+}
+.invitacionVideo {
+	display: flex;
+	justify-content: flex-start;
+	margin-left: auto;
+	margin-right: auto;
+	width: 355px;
+	height: 650px;
+	overflow-x: hidden;
+}
+.video {
+	margin-top: -15px;
+}
+.botonera {
+	display: flex;
+	justify-content: space-between;
+	margin-top: -500px;
+	z-index: 100;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* .boton {
+	padding: 70px;
+} */
+
+.left {
+	padding-right: 150px;
+	margin-left: 20px;
+	padding-top: 150px;
+	padding-bottom: 150px;
+}
+.right {
+	margin-left: 150px;
+	margin-right: 20px;
+	padding-top: 150px;
+	padding-bottom: 150px;
+}
+.ejemplo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -200px;
+	z-index: 50;
+}
