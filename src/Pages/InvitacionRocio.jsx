@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
-import v0 from '../Videos/0.mp4'
 import { videos } from '../Videos/utils'
+import { Counter, Map, Hashtag, Confirm, Marca, Calendar } from './utils.jsx'
 
 export function InvitacionRocio() {
 	const [id, setId] = useState(0)
@@ -17,6 +17,17 @@ export function InvitacionRocio() {
 			return id
 		}
 	}
+
+	const action = {
+		0: <></>,
+		1: <></>,
+		2: <Counter />,
+		3: <Calendar />,
+		4: <Map />,
+		5: <></>,
+		6: <Confirm />,
+		7: <Marca />,
+	}
 	return (
 		<>
 			<div className='invitacionVideo'>
@@ -29,15 +40,15 @@ export function InvitacionRocio() {
 				})}
 			</div>
 			<div className='botonera'>
-				<a className='boton left' name='menos' onClick={handleClick} href={`#${id}`}>
+				<a className={`boton left ${id === 0 && 'hidden'}`} name='menos' onClick={handleClick} href={`#${id}`}>
 					{'<'}
 				</a>
-				<a className='boton right' name='mas' onClick={handleClick} href={`#${id}`}>
+
+				<a className={`boton right ${id === 7 && 'hidden'}`} name='mas' onClick={handleClick} href={`#${id}`}>
 					{'>'}
 				</a>
 			</div>
-			{/* validacion para cada pantalla */}
-			{id === 2 && <p className='ejemplo'>Aca iria el counter de cuantos dias faltan</p>}
+			{action[id]}
 		</>
 	)
 }
