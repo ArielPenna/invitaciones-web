@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import logo from '../images/logoKisar.png'
 
 export const Counter = () => {
 	let hoy = new Date()
@@ -38,5 +39,5 @@ export const Confirm = () => {
 	)
 }
 export const Marca = () => {
-	return <p className='base'>Marca</p>
+	return <img className='base marca sombra' src={logo} alt='logoKisar' />
 }
