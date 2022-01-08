@@ -41,11 +41,11 @@ export function InvitacionRocio() {
 			</div>
 			<div className='botonera'>
 				<a className={`boton left ${id === 0 && 'hidden'}`} name='menos' onClick={handleClick} href={`#${id}`}>
-					{'<'}
+					<i className='bi bi-arrow-left-circle'></i>
 				</a>
 
 				<a className={`boton right ${id === 7 && 'hidden'}`} name='mas' onClick={handleClick} href={`#${id}`}>
-					{'>'}
+					<i className='bi bi-arrow-right-circle'></i>
 				</a>
 			</div>
 			{action[id]}
