@@ -9,22 +9,21 @@ export const Counter = () => {
 
 	return (
 		<div className='base container'>
-			<p className='base diasUp'>{dias}</p>
-			<p className='base diasDown'> días</p>
+			<p className='base dias'>{dias}</p>
 		</div>
 	)
 }
 export const Calendar = () => {
 	return (
-		<a className='base calendar' target='_blank' href='https://calendar.google.com/calendar/u/0/r/month/2022/4/29?eid=MGdrNXM3Z3ByZjk0NXZpZTlibTdkamQzNjQgYXJpZWxwZW5uYUBt&ctz=America/Argentina/Buenos_Aires&hl=es&es=1&sf=true'>
+		<a className='base btn' target='_blank' href='https://calendar.google.com/calendar/u/0/r/month/2022/4/29?eid=MGdrNXM3Z3ByZjk0NXZpZTlibTdkamQzNjQgYXJpZWxwZW5uYUBt&rst=1&ctz=America/Argentina/Buenos_Aires&hl=es&es=1&sf=true&response_updated=1'>
 			Agregar al calendario
 		</a>
 	)
 }
 export const Map = () => {
 	return (
-		<a className='base map' target='_blank' href='https://www.google.com/maps/place/Av.+Aim%C3%A9+Tschiffely+1801,+B1745JCD+La+Reja,+Provincia+de+Buenos+Aires/@-34.6501359,-58.8193694,17z/data=!4m5!3m4!1s0x95bc946fd8b85229:0x183369ee9f195b06!8m2!3d-34.6504081!4d-58.8174278'>
-			Ver en Google maps
+		<a className='base btn' target='_blank' href='https://www.google.com/maps/place/Av.+Aim%C3%A9+Tschiffely+1801,+B1745JCD+La+Reja,+Provincia+de+Buenos+Aires/@-34.6501359,-58.8193694,17z/data=!4m5!3m4!1s0x95bc946fd8b85229:0x183369ee9f195b06!8m2!3d-34.6504081!4d-58.8174278'>
+			¿Cómo llegar?
 		</a>
 	)
 }
@@ -33,7 +32,7 @@ export const Hashtag = () => {
 }
 export const Confirm = () => {
 	return (
-		<a className='base confirm' target='_blank' href='https://docs.google.com/forms/d/1r98AZuldqH9QtFENAFbgajI86M0W2tPS9uIBeaiwrwc/edit?usp=sharing'>
+		<a className='base btn' target='_blank' href='https://forms.gle/rvG4xF7QyamVcdmw5'>
 			Confirmar Asistencia
 		</a>
 	)
