@@ -8,7 +8,7 @@ export const Counter = () => {
 	let dias = Math.floor(diferencia / (1000 * 60 * 60 * 24))
 
 	return (
-		<div className='base container'>
+		<div className='base container' style={{ paddingTop: '30px' }}>
 			<p className='base dias'>{dias}</p>
 		</div>
 	)
