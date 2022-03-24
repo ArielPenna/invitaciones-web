@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import logo from '../images/logoKisar.png'
 
 export const Counter = () => {
 	let hoy = new Date()
-	let fiesta = new Date(2022, 4, 29)
+	let fiesta = new Date('2022-4-29')
 	let diferencia = fiesta - hoy
 	let dias = Math.floor(diferencia / (1000 * 60 * 60 * 24))
 
@@ -22,7 +22,11 @@ export const Calendar = () => {
 }
 export const Map = () => {
 	return (
-		<a className='base btn' target='_blank' href='https://www.google.com/maps/place/Av.+Aim%C3%A9+Tschiffely+1801,+B1745JCD+La+Reja,+Provincia+de+Buenos+Aires/@-34.6501359,-58.8193694,17z/data=!4m5!3m4!1s0x95bc946fd8b85229:0x183369ee9f195b06!8m2!3d-34.6504081!4d-58.8174278'>
+		<a
+			className='base btn'
+			target='_blank'
+			href='https://www.google.com/maps/place/Janos+Pilar/@-34.4726289,-58.8905256,12z/data=!4m21!1m15!4m14!1m6!1m2!1s0x95bcbaf1af5b2387:0x24a290b93b03b03e!2sAu+Panamericana,+Provincia+de+Buenos+Aires!2m2!1d-58.6153511!2d-34.485358!1m6!1m2!1s0x95bc9ce3d9b1512b:0x6ec2c4b8b23193bc!2sJanos+Pilar,+Panamericana+Km+52,+B1629+Pilar,+Provincia+de+Buenos+Aires!2m2!1d-58.8917633!2d-34.4461729!3m4!1s0x95bc9ce3d9b1512b:0x6ec2c4b8b23193bc!8m2!3d-34.4461729!4d-58.8917633'
+		>
 			¿Cómo llegar?
 		</a>
 	)
