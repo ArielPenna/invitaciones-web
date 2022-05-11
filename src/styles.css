@@ -10,6 +10,12 @@
 	font-style: normal;
 	font-weight: normal;
 }
+@font-face {
+	font-family: 'Playlist';
+	src: url('font/playlist-script.otf') format('truetype');
+	font-style: normal;
+	font-weight: normal;
+}
 .invitacion {
 	display: flex;
 	flex-direction: column;
@@ -72,12 +78,11 @@
 	flex-direction: column;
 }
 .dias {
-	font-family: 'BrittanySignature', cursive;
 	font-size: 120px;
-	padding-top: 60px;
 	color: #b78f63;
 	animation: fadeIn 0.5s;
 }
+
 .btn {
 	margin-top: 100px;
 	padding-top: 300px;

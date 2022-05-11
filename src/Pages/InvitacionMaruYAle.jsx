@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react'
-import { videosROCIO } from '../Videos/utils'
+import { videosMYA } from '../Videos/utils'
 import { Counter, Map, Hashtag, Confirm, Marca, Calendar } from './utils.jsx'
 
-export function InvitacionRocio() {
+export function InvitacionMaruYAle() {
 	const [id, setId] = useState(0)
 
 	console.log(id)
@@ -21,24 +21,23 @@ export function InvitacionRocio() {
 	const action = {
 		0: <></>,
 		1: <></>,
-		2: <Counter date='2022-4-29' font='BrittanySignature' pt='60px' />,
-		3: <Calendar url='https://calendar.google.com/calendar/u/0/r/month/2022/4/29?eid=MGdrNXM3Z3ByZjk0NXZpZTlibTdkamQzNjQgYXJpZWxwZW5uYUBt&rst=1&ctz=America/Argentina/Buenos_Aires&hl=es&es=1&sf=true&response_updated=1' />,
-		4: (
-			<Map url='https://www.google.com/maps/place/Janos+Pilar/@-34.4726289,-58.8905256,12z/data=!4m21!1m15!4m14!1m6!1m2!1s0x95bcbaf1af5b2387:0x24a290b93b03b03e!2sAu+Panamericana,+Provincia+de+Buenos+Aires!2m2!1d-58.6153511!2d-34.485358!1m6!1m2!1s0x95bc9ce3d9b1512b:0x6ec2c4b8b23193bc!2sJanos+Pilar,+Panamericana+Km+52,+B1629+Pilar,+Provincia+de+Buenos+Aires!2m2!1d-58.8917633!2d-34.4461729!3m4!1s0x95bc9ce3d9b1512b:0x6ec2c4b8b23193bc!8m2!3d-34.4461729!4d-58.8917633' />
-		),
-		5: <></>,
-		6: <Confirm url='https://forms.gle/rvG4xF7QyamVcdmw5' />,
-		7: <Marca />,
+		2: <></>,
+		3: <Counter date='2022-7-2' font='Playlist' pt='100px' />,
+		4: <Calendar url='https://calendar.google.com/event?action=TEMPLATE&tmeid=N2ZiZHYwcDNsbnNqZTR1azVkNWYzYjFzajkgYXJpZWxwZW5uYUBt&tmsrc=arielpenna%40gmail.com' />,
+		5: <Map url='https://goo.gl/maps/BgzQ7v1rc4wrn56z5' />,
+		6: <></>,
+		7: <Confirm url='https://docs.google.com/forms/d/e/1FAIpQLSd5WB1yPndRwD0bGnC-5bkD4fIwqVGkaZwdOz9IVbybTi2gUw/viewform' />,
+		8: <Marca />,
 	}
 
 	useEffect(() => {
-		document.title = 'Rocio'
+		document.title = 'Maru & Ale'
 	}, [])
 
 	return (
 		<>
 			<div className='invitacionVideo'>
-				{videosROCIO.map((video, index) => {
+				{videosMYA.map((video, index) => {
 					return (
 						<video id={index} key={index} className='video' width='355' height='660' autoPlay={true} muted={true} loop={true}>
 							<source src={video} type='video/mp4' />

@@ -1,10 +1,19 @@
 import React from 'react'
 import './index.css'
-import Invitaciones from './Pages/Invitaciones'
 import './styles.css'
+import { InvitacionMaruYAle } from './Pages/InvitacionMaruYAle'
+import { InvitacionRocio } from './Pages/InvitacionRocio'
+import { Route, Routes } from 'react-router-dom'
 
 function App() {
-	return <Invitaciones />
+	return (
+		<div className='invitacion'>
+			<Routes>
+				<Route path='/invitacion-maru-y-ale' element={<InvitacionMaruYAle />} />
+				<Route path='/invitacion-rocio' element={<InvitacionRocio />} />
+			</Routes>
+		</div>
+	)
 }
 
 export default App
