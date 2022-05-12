@@ -5,9 +5,7 @@ import { Counter, Map, Confirm, Marca, Calendar, CopyToClipBoard } from './utils
 export function InvitacionMaruYAle() {
 	const [id, setId] = useState(0)
 
-	console.log(id)
 	const handleClick = (e) => {
-		console.log('e.target.name :', e.target.name)
 		if (e.target.name === 'mas') {
 			setId(id + 1)
 			return id
