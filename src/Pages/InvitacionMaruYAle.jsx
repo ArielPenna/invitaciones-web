@@ -50,7 +50,7 @@ export function InvitacionMaruYAle() {
 					{'<'}
 				</a>
 
-				<a className={`boton right ${id === 7 && 'hidden'}`} name='mas' onClick={handleClick} href={`#${id}`}>
+				<a className={`boton right ${id === 8 && 'hidden'}`} name='mas' onClick={handleClick} href={`#${id}`}>
 					{'>'}
 				</a>
 			</div>
