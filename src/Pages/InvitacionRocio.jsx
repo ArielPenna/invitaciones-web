@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { videosROCIO } from '../Videos/utils'
-import { Counter, Map, Hashtag, Confirm, Marca, Calendar } from './utils.jsx'
+import { Counter, Map, Confirm, Marca, Calendar } from './utils.jsx'
 
 export function InvitacionRocio() {
 	const [id, setId] = useState(0)

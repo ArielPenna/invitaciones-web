@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { videosMYA } from '../Videos/utils'
-import { Counter, Map, Hashtag, Confirm, Marca, Calendar } from './utils.jsx'
+import { Counter, Map, Confirm, Marca, Calendar, CopyToClipBoard } from './utils.jsx'
 
 export function InvitacionMaruYAle() {
 	const [id, setId] = useState(0)
@@ -25,7 +25,7 @@ export function InvitacionMaruYAle() {
 		3: <Counter date='2022-7-2' font='Playlist' pt='100px' />,
 		4: <Calendar url='https://calendar.google.com/event?action=TEMPLATE&tmeid=N2ZiZHYwcDNsbnNqZTR1azVkNWYzYjFzajkgYXJpZWxwZW5uYUBt&tmsrc=arielpenna%40gmail.com' />,
 		5: <Map url='https://goo.gl/maps/BgzQ7v1rc4wrn56z5' />,
-		6: <></>,
+		6: <CopyToClipBoard />,
 		7: <Confirm url='https://docs.google.com/forms/d/e/1FAIpQLSd5WB1yPndRwD0bGnC-5bkD4fIwqVGkaZwdOz9IVbybTi2gUw/viewform' />,
 		8: <Marca />,
 	}
@@ -46,11 +46,11 @@ export function InvitacionMaruYAle() {
 				})}
 			</div>
 			<div className='botonera'>
-				<a className={`boton left ${id === 0 && 'hidden'}`} name='menos' onClick={handleClick} href={`#${id}`}>
+				<a className={`boton font left ${id === 0 && 'hidden'}`} name='menos' onClick={handleClick} href={`#${id}`}>
 					{'<'}
 				</a>
 
-				<a className={`boton right ${id === 8 && 'hidden'}`} name='mas' onClick={handleClick} href={`#${id}`}>
+				<a className={`boton font right ${id === 8 && 'hidden'}`} name='mas' onClick={handleClick} href={`#${id}`}>
 					{'>'}
 				</a>
 			</div>
