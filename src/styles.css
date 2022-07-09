@@ -115,3 +115,42 @@
 	font-size: 30px;
 	color: black;
 }
+/**Pagina de Muestras*/
+
+.letraMYA {
+	font-family: 'Playlist';
+	font-weight: 0;
+	font-size: 36px;
+	margin-top: 15px;
+	margin-left: 15px;
+	color: white;
+	text-shadow: 0 0 6px black;
+}
+
+.iframe {
+	border-radius: 8px;
+	margin-right: 8px;
+	margin-bottom: 8px;
+	width: 640px;
+	height: 360px;
+}
+
+.collapseContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+@media (max-width: 1000px) {
+	.iframe {
+		width: 320px;
+		height: 180px;
+	}
+}
+@media (max-width: 450px) {
+	.iframe {
+		width: 240px;
+		height: 135px;
+	}
+}
