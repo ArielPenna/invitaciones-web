@@ -21,12 +21,15 @@ export function FiestaMaruYAle() {
 					<div className='collapseContainer'>
 						<VideoContainer url={SAVE_THE_DATE} />
 						<VideoContainer url={FOTOHISTORIA} />
-
 						<VideoContainer url={FIN_DE_FISTA} />
 					</div>
 				</Collapse>
 				<Collapse title='Mirá nuestras Fotos' bordered shadow>
-					<Text>MUY PRONTO...</Text>
+					<Text>
+						<a href='https://kisar6.pixieset.com/fiestamaruyale/' target='_blank'>
+							Click AQUI para ver las fotos!!
+						</a>
+					</Text>
 				</Collapse>
 			</Collapse.Group>
 		</Container>
